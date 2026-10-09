@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Solaris</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #0f1117; color: #e6e8ee; line-height: 1.7; }
+    .container { max-width: 760px; margin: 0 auto; padding: 60px 22px 90px; }
+    .logo { display: inline-block; background: #5865F2; color: #fff; font-weight: 700; padding: 6px 14px; border-radius: 10px; text-decoration: none; font-size: .95rem; }
+    h1 { color: #fff; font-size: 1.9rem; margin: 32px 0 4px; }
+    .actualizado { color: #6b7180; font-size: .9rem; margin-bottom: 30px; }
+    h2 { color: #fff; font-size: 1.15rem; margin-top: 34px; }
+    p, li, td { color: #b8bcc8; }
+    ul { padding-left: 22px; }
+    table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+    th, td { text-align: left; padding: 10px 12px; border: 1px solid #262b38; font-size: .93rem; }
+    th { color: #e6e8ee; background: #161a23; }
+    a { color: #8ab4ff; }
+    footer { margin-top: 60px; color: #6b7180; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="logo" href="../">Solaris</a>
+    <h1>Política de Privacidad</h1>
+    <p class="actualizado">Última actualización: octubre de 2026</p>
+
+    <h2>1. Datos que procesa el bot</h2>
+    <p>Solaris procesa la mínima cantidad de datos necesaria para funcionar:</p>
+    <table>
+      <tr><th>Dato</th><th>Finalidad</th><th>Origen</th></tr>
+      <tr><td>ID de usuario de Discord y nombre de usuario</td><td>Mantener el puntaje del ranking de trivia</td><td>Al responder a /trivia</td></tr>
+      <tr><td>Contenido de los mensajes dentro de canales de ticket</td><td>Generar el transcript de soporte al cerrar un ticket</td><td>Canal de ticket correspondiente</td></tr>
+      <tr><td>IDs de canales, roles y categorías</td><td>Configurar el sistema de tickets del servidor</td><td>Comando /ticket-panel (administradores)</td></tr>
+    </table>
+    <p><strong>Importante:</strong> el bot <u>no lee el contenido general de los mensajes</u>
+    del servidor. Solo procesa interacciones (comandos y botones) y los mensajes de
+    los canales de tickets que él mismo crea.</p>
+
+    <h2>2. Finalidad</h2>
+    <p>Los datos se usan exclusivamente para las funcionalidades del bot: minijuegos
+    (ranking de trivia) y soporte (tickets y transcripts). No se usan para ningún
+    otro fin.</p>
+
+    <h2>3. Almacenamiento</h2>
+    <ul>
+      <li>Los puntajes de trivia se guardan en archivos en el servidor de alojamiento del bot.</li>
+      <li>Los transcripts de tickets se envían al canal de registros designado por la administración del servidor, dentro de Discord. El bot no los publica en ningún sitio externo.</li>
+      <li>La configuración de tickets (IDs de canales/roles) se guarda en archivos en el servidor de alojamiento del bot.</li>
+    </ul>
+
+    <h2>4. Lo que NO hacemos</h2>
+    <ul>
+      <li>No vendemos, alquilamos ni compartimos datos con terceros.</li>
+      <li>No usamos analítica, telemetría ni publicidad.</li>
+      <li>No creamos perfiles de usuarios ni rastreamos su actividad fuera de las interacciones con el bot.</li>
+      <li>No solicitamos ni almacenamos correos, contraseñas, pagos ni datos sensibles.</li>
+    </ul>
+
+    <h2>5. Retención y eliminación</h2>
+    <p>Los puntajes de trivia se conservan mientras el bot esté activo. Puedes solicitar
+    la eliminación de tus datos (puntaje, o cualquier ticket/transcript que te
+    afecte) escribiendo a <a href="mailto:schviscs@gmail.com">schviscs@gmail.com</a>
+    indicando tu ID de usuario de Discord. También puedes pedirlo directamente
+    abriendo un ticket en el servidor.</p>
+
+    <h2>6. Terceros</h2>
+    <p>El bot opera sobre Discord (cuyos <a href="https://discord.com/privacy">términos
+    y política de privacidad</a> aplican a la plataforma) y sobre un proveedor de
+    alojamiento que almacena los archivos descritos en esta política.</p>
+
+    <h2>7. Cambios a esta política</h2>
+    <p>Esta política puede actualizarse. La versión publicada en esta página es la
+    vigente.</p>
+
+    <h2>8. Contacto</h2>
+    <p>Preguntas sobre privacidad: <a href="mailto:schviscs@gmail.com">schviscs@gmail.com</a>.</p>
+
+    <footer>
+      <a href="../">← Volver</a> · <a href="../terminos/">Términos de Servicio</a> · Solaris, bot de comunidad para Discord
+    </footer>
+  </main>
+</body>
+</html>
