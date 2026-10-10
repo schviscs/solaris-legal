@@ -35,10 +35,14 @@
       <tr><td>ID de usuario de Discord y nombre de usuario</td><td>Mantener el puntaje del ranking de trivia</td><td>Al responder a /trivia</td></tr>
       <tr><td>Contenido de los mensajes dentro de canales de ticket</td><td>Generar el transcript de soporte al cerrar un ticket</td><td>Canal de ticket correspondiente</td></tr>
       <tr><td>IDs de canales, roles y categorías</td><td>Configurar el sistema de tickets del servidor</td><td>Comando /ticket-panel (administradores)</td></tr>
+      <tr><td>Contenido de mensajes que comienzan con el prefijo del bot (ej. "!")</td><td>Procesar comandos de texto (ej. !decir)</td><td>Al escribir un comando con prefijo</td></tr>
     </table>
-    <p><strong>Importante:</strong> el bot <u>no lee el contenido general de los mensajes</u>
-    del servidor. Solo procesa interacciones (comandos y botones) y los mensajes de
-    los canales de tickets que él mismo crea.</p>
+    <p><strong>Importante:</strong> el bot solo lee el contenido de los mensajes
+    que <u>comienzan con su prefijo configurado</u> (por ejemplo, «!»), para
+    procesar comandos de texto. El resto de los mensajes del servidor no se lee,
+    no se almacena ni se envía a ningún lugar. Además, el bot procesa
+    interacciones (comandos y botones) y los mensajes de los canales de tickets
+    que él mismo crea.</p>
 
     <h2>2. Finalidad</h2>
     <p>Los datos se usan exclusivamente para las funcionalidades del bot: minijuegos
@@ -58,6 +62,7 @@
       <li>No usamos analítica, telemetría ni publicidad.</li>
       <li>No creamos perfiles de usuarios ni rastreamos su actividad fuera de las interacciones con el bot.</li>
       <li>No solicitamos ni almacenamos correos, contraseñas, pagos ni datos sensibles.</li>
+      <li>No guardamos el contenido de los mensajes con prefijo: se procesan en el momento y se descartan.</li>
     </ul>
 
     <h2>5. Retención y eliminación</h2>
