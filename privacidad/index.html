@@ -36,14 +36,18 @@
       <tr><td>Contenido de los mensajes dentro de canales de ticket</td><td>Generar el transcript de soporte al cerrar un ticket</td><td>Canal de ticket correspondiente</td></tr>
       <tr><td>IDs de canales, roles y categorías</td><td>Configurar el sistema de tickets del servidor</td><td>Comando /ticket-panel (administradores)</td></tr>
       <tr><td>Contenido de mensajes que comienzan con el prefijo del bot (ej. "!")</td><td>Procesar comandos de texto (ej. !decir)</td><td>Al escribir un comando con prefijo</td></tr>
+      <tr><td>Palabras individuales sueltas (sin autor ni contexto)</td><td>Generador de «sopa de palabras» (combinaciones aleatorias)</td><td>Mensajes del servidor, solo mientras la función está activada</td></tr>
       <tr><td>Advertencias de moderación: ID de usuario, moderador y motivo</td><td>Historial de advertencias del servidor</td><td>Comandos /warn y /warns</td></tr>
     </table>
-    <p><strong>Importante:</strong> el bot solo lee el contenido de los mensajes
+    <p><strong>Importante:</strong> el bot lee el contenido de los mensajes
     que <u>comienzan con su prefijo configurado</u> (por ejemplo, «!»), para
-    procesar comandos de texto. El resto de los mensajes del servidor no se lee,
-    no se almacena ni se envía a ningún lugar. Además, el bot procesa
-    interacciones (comandos y botones) y los mensajes de los canales de tickets
-    que él mismo crea.</p>
+    procesar comandos de texto. Además, cuando un administrador activa la
+    «sopa de palabras» en un servidor, el bot lee los mensajes de ese servidor
+    para extraer <u>palabras individuales sueltas</u> — sin autor, sin mensaje
+    completo y sin contexto — con el único fin de generar combinaciones
+    aleatorias. El resto de los mensajes no se lee ni se almacena. El bot
+    también procesa interacciones (comandos y botones) y los mensajes de los
+    canales de tickets que él mismo crea.</p>
 
     <h2>2. Finalidad</h2>
     <p>Los datos se usan exclusivamente para las funcionalidades del bot: minijuegos
@@ -64,6 +68,7 @@
       <li>No creamos perfiles de usuarios ni rastreamos su actividad fuera de las interacciones con el bot.</li>
       <li>No solicitamos ni almacenamos correos, contraseñas, pagos ni datos sensibles.</li>
       <li>No guardamos el contenido de los mensajes con prefijo: se procesan en el momento y se descartan.</li>
+      <li>No asociamos palabras a personas: el banco de la «sopa» no guarda autores ni mensajes.</li>
     </ul>
 
     <h2>5. Retención y eliminación</h2>
